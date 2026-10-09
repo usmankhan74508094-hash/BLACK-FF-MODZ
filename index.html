@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080b12">
+<meta name="description" content="BLACK FF MODZ — Android APK downloads.">
+<title>BLACK FF MODZ</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="/"><img src="/logo.jpg" alt="BLACK FF MODZ logo"><span>BLACK <b>FF MODZ</b></span></a><button id="adminOpen" class="outline-btn">Admin Login</button></header>
+<main>
+<section class="hero">
+  <div class="eyebrow"><span class="dot"></span> OFFICIAL DOWNLOAD HUB</div>
+  <h1>BLACK FF <span>MODZ</span></h1>
+  <p class="subtitle">Your APK library. One place. Easy downloads.</p>
+  <div class="hero-line"></div>
+  <div class="hero-logo"><img src="/logo.jpg" alt="BLACK FF MODZ emblem"></div>
+  <a href="#downloads" class="primary-btn">EXPLORE DOWNLOADS <span>↓</span></a>
+</section>
+<section id="downloads" class="downloads">
+  <div class="section-head"><div><p class="eyebrow">THE LIBRARY</p><h2>Available APKs</h2></div><span id="count" class="count">0 FILES</span></div>
+  <div id="apkList" class="apk-list"><div class="empty"><div class="empty-icon">↓</div><h3>No APKs uploaded yet</h3><p>New downloads will appear here when the site admin uploads them.</p></div></div>
+</section>
+<section class="notice"><strong>⚠ Download safely</strong><p>Only install APK files from sources you trust. Review permissions and scan files before installing. This site does not guarantee that third-party APKs are safe or authorized.</p></section>
+</main>
+<footer><span>© <span id="year"></span> BLACK FF MODZ</span><span>BUILT FOR ANDROID GAMERS</span></footer>
+
+<div id="adminModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+<div class="modal-card"><button id="closeModal" class="close" aria-label="Close">×</button>
+<div id="loginPanel"><p class="eyebrow">RESTRICTED AREA</p><h2 id="adminTitle">Admin access</h2><p class="muted">Only the site owner can upload or remove APKs.</p>
+<form id="loginForm"><label>Username<input name="username" autocomplete="username" required></label><label>Password<input name="password" type="password" autocomplete="current-password" required></label><button class="primary-btn full" type="submit">SIGN IN</button><p id="loginMsg" class="message"></p></form></div>
+<div id="uploadPanel" class="hidden"><p class="eyebrow">OWNER DASHBOARD</p><h2>Upload an APK</h2><p class="muted">Choose an .apk file to publish it for visitors.</p>
+<form id="uploadForm"><label>App title<input name="title" maxlength="80" placeholder="e.g. BLACK FF MODZ App" required></label><label>Description<textarea name="description" maxlength="500" rows="3" placeholder="Version, update notes, etc."></textarea></label><label>APK file<input name="apk" type="file" accept=".apk,application/vnd.android.package-archive" required></label><button class="primary-btn full" type="submit">UPLOAD APK</button><p id="uploadMsg" class="message"></p></form>
+<div class="dashboard-head"><h3>Manage uploads</h3><button id="logout" class="outline-btn">Log out</button></div><div id="manageList"></div>
+</div></div></div>
+<script src="/app.js" defer></script>
+</body></html>
